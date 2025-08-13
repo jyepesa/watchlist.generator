@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.movie-container, .watchlist {
+  width: 40%;
+}
+.add-button, .remove-button {
+  float: right;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.toWatchlist {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    display: block;
+  }
+  .movie-container {
+    width: 90%;
+    padding: 3px;
+  }
+  .single-movie {
+    border: 1px solid;
+    min-height: 120px;
+    padding: 10px;
+  }
+  .watchlist {
+    display: none;
+  }
+  .watchlist-v {
+    display: block;
+    width: 90%;
+    padding: 3px;
+    float: none;
+  }
+  .toWatchlist {
+    visibility: visible;
+    margin: 2px auto;
+    display: block;
+  }
+}
